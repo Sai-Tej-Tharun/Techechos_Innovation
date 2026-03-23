@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development — TechEchos Innovation</title>
+  <meta name="description" content="TechEchos delivers high-performance web applications built with React, Next.js and Node.js. Pixel-perfect, blazing-fast and enterprise-grade from day one.">
+  <meta name="keywords" content="web development, React, Next.js, Node.js, TypeScript, web apps, TechEchos">
+  <meta name="author" content="TechEchos Innovation">
+  <meta property="og:title"       content="Web Development — TechEchos Innovation">
+  <meta property="og:description" content="TechEchos delivers high-performance web applications built with React, Next.js and Node.js. Pixel-perfect, blazing-fast and enterprise-grade from day one.">
+  <meta property="og:type"        content="website">
+  <meta property="og:image"       content="../global-images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="../global-images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global-css/global.css">
+  <link rel="stylesheet" href="service-detail.css">
+  <style>
+    
+    :root {
+      --sd-dot-color:      #007BFF;
+      --sd-accent-grad:    linear-gradient(90deg, #007BFF 0%, #00CFFF 100%);
+      --sd-orb-1:          radial-gradient(circle, rgba(0,123,255,0.28), transparent 70%);
+      --sd-orb-2:          radial-gradient(circle, rgba(0,207,255,0.20), transparent 70%);
+      --sd-icon-bg:        rgba(0,123,255,0.18);
+      --sd-icon-hover:     rgba(0,123,255,0.32);
+      --sd-pill-hover-bg:  rgba(0,123,255,0.18);
+      --sd-pill-hover-border: rgba(0,123,255,0.40);
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="global-canvas"></canvas>
+
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO
+         ══════════════════════════════════════ -->
+    <section class="sd-hero" id="hero" aria-label="Web Development service page hero">
+      <canvas id="sd-canvas" aria-hidden="true"></canvas>
+      <div class="sd-orb sd-orb-1" aria-hidden="true"></div>
+      <div class="sd-orb sd-orb-2" aria-hidden="true"></div>
+
+      <div class="container sd-hero-inner">
+        <div>
+          
+          <nav class="sd-crumb" aria-label="Breadcrumb">
+            <a href="../home-1/home.html">Home</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <a href="../services/services.html">Services</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <span>Web Development</span>
+          </nav>
+
+          
+          <div class="sd-eyebrow reveal" aria-label="Service category">
+            <span class="sd-eyebrow-dot" aria-hidden="true"></span>
+            Service · Web Development
+          </div>
+
+          
+          <h1 class="sd-headline reveal delay-1">
+            High-Performance Web Apps,<br>
+            <span class="sd-accent">Engineered to Scale.</span>
+          </h1>
+
+          
+          <p class="sd-hero-sub reveal delay-2">We build blazing-fast web applications and SaaS platforms with modern frameworks. Every project ships with a comprehensive test suite, CI/CD pipeline, and production-ready architecture — not a polished demo.</p>
+
+          
+          <div class="sd-hero-meta reveal delay-3">
+            <span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>6 Weeks</strong> — MVP Timeline</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>Next.js</strong> — Primary Framework</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>TypeScript</strong> — Default</span>
+          </div>
+
+          
+          <div class="sd-hero-ctas reveal delay-4">
+            <a href="../contact/contact.html#quote" class="sd-btn-primary"
+               aria-label="Start a Web Development project">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Start This Service
+            </a>
+            <a href="../services/services.html" class="sd-btn-ghost"
+               aria-label="View all services">
+              All Services
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="sd-hero-stats reveal-right" aria-label="Service metrics">
+          <div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >50+</span>
+  <span class="sd-hero-stat-lbl">Web Apps Shipped</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" ><2s</span>
+  <span class="sd-hero-stat-lbl">Avg Load Time</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >100%</span>
+  <span class="sd-hero-stat-lbl">Responsive</span>
+</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         MAIN LAYOUT — content + sidebar
+         ══════════════════════════════════════ -->
+    <div class="sd-layout">
+      <div class="container sd-layout-inner">
+
+        
+        <div class="sd-main">
+
+          
+          <section class="sd-overview" aria-labelledby="sd-overview-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Service Overview
+            </div>
+            <div class="sd-overview-text reveal">
+              <p>Modern businesses live and die by their web presence. A slow, unreliable, or poorly architected web application doesn't just frustrate users — it costs you revenue, reputation, and talent. At TechEchos, we build web applications that are engineered to the same standard as the products at companies like Stripe, Linear, and Vercel.</p>
+<p>Our web development practice covers everything from <strong>consumer-facing SaaS products</strong> with millions of monthly active users to <strong>internal tooling platforms</strong> that power operations teams at Series B+ companies. We use React and Next.js as our primary stack — not because they're trendy, but because they give us the right tools for SSR, ISR, edge deployment and the kind of performance that converts users.</p>
+<p>Every engagement starts with architecture. We design your data models, API contracts, caching strategy and deployment pipeline before we write a single component. This means the decisions that are expensive to change later get made correctly the first time.</p>
+            </div>
+          </section>
+
+          
+          <section class="sd-features" aria-labelledby="sd-features-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Core Capabilities
+            </div>
+            <div class="sd-features-grid">
+              <div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+  <h3 class="sd-fc-title">React & Next.js Architecture</h3>
+  <p class="sd-fc-desc">Server components, ISR, edge middleware and hybrid rendering strategies chosen for your specific performance and SEO needs.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+  <h3 class="sd-fc-title">Sub-Second Performance</h3>
+  <p class="sd-fc-desc">Every project ships with a Core Web Vitals budget. LCP under 1.5s, CLS zero, FID under 100ms — measured and enforced in CI.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+  <h3 class="sd-fc-title">Full-Stack TypeScript</h3>
+  <p class="sd-fc-desc">End-to-end type safety from database schema to React component. tRPC or REST APIs with Zod validation at every boundary.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div>
+  <h3 class="sd-fc-title">CI/CD from Day One</h3>
+  <p class="sd-fc-desc">GitHub Actions pipeline with automated testing, linting, preview deployments and one-click production releases on day one.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+  <h3 class="sd-fc-title">Security-First</h3>
+  <p class="sd-fc-desc">OWASP Top 10 addressed in every project. CSP headers, CSRF protection, SQL injection prevention and regular dependency audits baked in.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+  <h3 class="sd-fc-title">Analytics & Observability</h3>
+  <p class="sd-fc-desc">Structured logging, error tracking, performance monitoring and real user metrics — you know exactly what your users are experiencing.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-process" aria-labelledby="sd-process-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              How We Deliver
+            </div>
+            <div class="sd-process-list" role="list">
+              <div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">01</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Technical Discovery</h4>
+    <p class="sd-pi-desc">We audit your requirements, map data models, define API contracts and design the deployment architecture. Outcome: a technical spec you approve before we write code.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">02</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Design System & UI</h4>
+    <p class="sd-pi-desc">Component library, design tokens and a live Storybook — your design system lives in code from the first sprint. No Figma drift.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">03</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Core Application Build</h4>
+    <p class="sd-pi-desc">Feature sprints with daily standups. You get a working demo URL every Friday. No black-box development — visibility at every step.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">04</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Testing & Performance</h4>
+    <p class="sd-pi-desc">Unit tests, integration tests, E2E with Playwright. Lighthouse scores verified. Load testing with k6 before any production deployment.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">05</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Deployment & Handover</h4>
+    <p class="sd-pi-desc">Zero-downtime deployment to Vercel, AWS or your preferred cloud. Full documentation and a recorded walkthrough of the codebase.</p>
+  </div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-metrics" aria-label="Service results and metrics">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Results We Deliver
+            </div>
+            <div class="sd-metrics-grid">
+              <div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >50+</span>
+  <span class="sd-mc-lbl">Web apps shipped in production</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" ><2s</span>
+  <span class="sd-mc-lbl">Average Largest Contentful Paint</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >98%</span>
+  <span class="sd-mc-lbl">On-time delivery rate</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >100%</span>
+  <span class="sd-mc-lbl">TypeScript coverage</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >4.9★</span>
+  <span class="sd-mc-lbl">Average client rating</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >30d</span>
+  <span class="sd-mc-lbl">Post-launch support included</span>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-stack" aria-label="Technology stack">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Technology Stack
+            </div>
+            <div class="sd-stack-grid">
+              <div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Frontend</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">⚛️</span>React</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔲</span>Next.js</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🎨</span>Tailwind CSS</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📘</span>TypeScript</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🎭</span>Framer Motion</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Backend</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🟢</span>Node.js</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">⚡</span>Express / Fastify</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🐘</span>PostgreSQL</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🍃</span>MongoDB</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔴</span>Redis</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📦</span>Prisma ORM</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">DevOps</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🐳</span>Docker</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">☁️</span>Vercel / AWS</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔄</span>GitHub Actions</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📊</span>Datadog</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔍</span>Sentry</span></div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-usp" aria-labelledby="sd-usp-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Why TechEchos
+            </div>
+            <div class="sd-usp-list">
+              <div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We own the architecture</strong> — Not just the code. We design your system so it survives 10x growth without a painful rewrite.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Performance is non-negotiable</strong> — Lighthouse performance score above 90 is a contractual deliverable on every engagement.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>You get the engineers, not an account manager</strong> — The senior engineer who designed your system is in your Slack answering questions directly.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Accessible by default</strong> — WCAG AA compliance is part of our standard process, not an add-on you have to ask for.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>No vendor lock-in</strong> — We use open standards and document every infrastructure decision so you can operate independently.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <div class="sd-callout sd-callout-info">
+  <span class="sd-callout-icon" aria-hidden="true">💡</span>
+  <p><strong>Why Next.js?</strong>Our default choice for web applications. Server components, ISR, edge middleware, built-in image optimisation and the largest React ecosystem. We've shipped 30+ Next.js applications in production — we know every sharp edge.</p>
+</div>
+
+          
+          <section class="sd-faq" aria-labelledby="sd-faq-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Frequently Asked Questions
+            </div>
+            <div class="sd-acc-list" role="list">
+              <div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Can you take over an existing codebase?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Yes. We conduct a technical audit in week one, produce a findings report, and propose a remediation roadmap. We've successfully taken over and modernised dozens of legacy codebases.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Do you build e-commerce sites?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Yes — from Shopify custom storefronts to fully custom headless commerce built on Next.js with Stripe, Mollie or any payment provider you require.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    What about CMS integration?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">We work with Contentful, Sanity, Prismic, Strapi and headless WordPress. We help you choose the right CMS for your team's workflow before we build a single template.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    How do you handle SEO?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Structured data, semantic HTML, automatic sitemap generation, Core Web Vitals optimisation and SSR/ISR for indexable content — SEO is built into our architecture, not added at the end.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    What is your testing approach?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Unit tests with Vitest, integration tests, end-to-end tests with Playwright, and accessibility tests with axe-core — all running in CI on every pull request.</div>
+  </div>
+</div>
+            </div>
+          </section>
+
+        </div>
+
+        
+        <aside class="sd-sidebar" aria-label="Service sidebar">
+
+          
+          <div class="sd-sc" aria-label="All services navigation">
+            <p class="sd-sc-head">All Services</p>
+            <div class="sd-sc-links">
+              <a href="web-development.html"       class="sd-sc-link is-current"       aria-label="Web Development">
+                ⚛️ Web Development
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="mobile-app.html"            class="sd-sc-link "    aria-label="Mobile App Development">
+                📱 Mobile App Dev
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cloud-solutions.html"       class="sd-sc-link "     aria-label="Cloud Solutions">
+                ☁️ Cloud Solutions
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="artificial-intelligence.html" class="sd-sc-link "     aria-label="Artificial Intelligence">
+                🧠 Artificial Intelligence
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="ui-ux-design.html"          class="sd-sc-link "   aria-label="UI / UX Design">
+                🎨 UI / UX Design
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cybersecurity.html"         class="sd-sc-link "  aria-label="Cybersecurity">
+                🔐 Cybersecurity
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc sd-sc-cta" aria-label="Start your project">
+            <div class="sd-sc-cta">
+              <img src="../images/logo.svg" alt="" style="width:42px;height:42px;object-fit:contain;margin:0 auto;filter:drop-shadow(0 0 10px rgba(249,115,22,.7));animation:sdBulbFloat 3s ease-in-out infinite;" aria-hidden="true">
+              <h4>Start This Service</h4>
+              <p>Free consultation · No obligation · Reply in 24 hours</p>
+              <a href="../contact/contact.html#quote" class="sd-sc-cta-btn"
+                 aria-label="Get a quote for Web Development">Get a Free Quote</a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Newsletter signup">
+            <p class="sd-sc-head">Weekly Insights</p>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.40);margin-bottom:12px;line-height:1.60;">
+              Get the latest in Web Development delivered every week.
+            </p>
+            <form class="sd-nl-form" novalidate aria-label="Newsletter signup">
+              <div class="sd-sc-nl">
+                <input type="email" placeholder="your@email.com" autocomplete="email" required aria-label="Email address">
+                <button type="submit" class="sd-sc-nl-btn">Subscribe Free</button>
+              </div>
+            </form>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Related services">
+            <p class="sd-sc-head">Related Services</p>
+            <div class="sd-sc-related">
+              <a href="mobile-app.html" class="sd-sc-rel-item" aria-label="Mobile App Development service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">📱</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Mobile App Development</span>
+    <span class="sd-sc-rel-cat">Flutter · React Native</span>
+  </div>
+</a>
+<a href="artificial-intelligence.html" class="sd-sc-rel-item" aria-label="Artificial Intelligence service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">🧠</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Artificial Intelligence</span>
+    <span class="sd-sc-rel-cat">LLMs · Computer Vision</span>
+  </div>
+</a>
+<a href="ui-ux-design.html" class="sd-sc-rel-item" aria-label="UI / UX Design service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">🎨</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">UI / UX Design</span>
+    <span class="sd-sc-rel-cat">Figma · Design Systems</span>
+  </div>
+</a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         BOTTOM CTA
+         ══════════════════════════════════════ -->
+    <section class="sd-cta-section" aria-labelledby="sd-cta-title">
+      <canvas id="sd-cta-canvas" aria-hidden="true"></canvas>
+  <div class="floating-bulbs" 
+       data-bulb-count="14"
+       data-bulb-img="../global-images/logo.svg">
+  </div>
+      <div class="container sd-cta-inner">
+        <div class="sd-cta-bulb-badge reveal" aria-hidden="true">
+          <div class="sd-cta-bulb-glow" aria-hidden="true"></div>
+          <img src="../images/logo.svg" alt="" class="sd-cta-bulb-img">
+        </div>
+        <h2 class="sd-cta-headline reveal delay-1" id="sd-cta-title">
+          Ready to Build<br>
+          <span class="sd-cta-accent">Something the Web Has Never Seen?</span>
+        </h2>
+        <p class="sd-cta-sub reveal delay-2">Whether it's a consumer product, a SaaS platform or an internal tool — we'll engineer it right the first time.</p>
+        <div class="sd-cta-acts reveal delay-3">
+          <a href="../contact/contact.html#quote" class="sd-btn-primary"
+             aria-label="Start your Web Development project">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Your Project
+          </a>
+          <a href="../services/services.html" class="sd-btn-ghost"
+             aria-label="Explore all services">
+            Explore All Services
+          </a>
+        </div>
+        <p class="sd-cta-fine reveal delay-4">No long-term contracts · Cancel anytime · First sprint on us</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../global-js/global.js"></script>
+  <script src="service-detail.js"></script>
+<script src="../global-js/particles.js"></script>
+</body>
+</html>

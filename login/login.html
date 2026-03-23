@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — TechEchos Innovation</title>
+  <meta name="description" content="Sign in or create a TechEchos Innovation account to track your projects, view invoices and access client support.">
+  <meta name="author" content="TechEchos Innovation">
+  <meta property="og:title" content="Login — TechEchos Innovation">
+  <meta property="og:type"  content="website">
+  <link rel="icon" type="image/svg+xml" href="../global-images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global-css/global.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="ln-body">
+
+  <!-- ══════════════════════════════════════
+       SCENE — Sky · Stars · Lanterns · Hills
+       ══════════════════════════════════════ -->
+  <div class="ln-scene" id="ln-scene" aria-hidden="true">
+
+    
+    <canvas id="ln-sky"   class="ln-canvas ln-sky-canvas"></canvas>
+
+    
+    <canvas id="ln-stars" class="ln-canvas ln-star-canvas"></canvas>
+
+    
+    <div class="ln-lantern-field" id="ln-lantern-field"></div>
+
+    
+    <svg class="ln-hills" viewBox="0 0 1440 340"
+         preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+
+      
+      <path class="ln-hill-back"
+        d="M0 280
+           C 120 180, 280 240, 440 190
+           C 600 140, 720 220, 900 170
+           C 1080 120, 1220 210, 1440 180
+           L 1440 340 L 0 340 Z"/>
+
+      
+      <path class="ln-hill-mid"
+        d="M0 310
+           C 100 240, 260 290, 420 265
+           C 580 240, 700 300, 880 270
+           C 1060 240, 1240 300, 1440 275
+           L 1440 340 L 0 340 Z"/>
+
+      
+      <path class="ln-hill-front"
+        d="M0 330
+           C 80  300, 200 320, 360 310
+           C 520 300, 680 330, 840 315
+           C 1000 300, 1180 330, 1440 318
+           L 1440 340 L 0 340 Z"/>
+
+      
+      <rect x="0" y="337" width="1440" height="6" fill="#03060C"/>
+    </svg>
+
+    
+    <div class="ln-orb ln-orb-purple" aria-hidden="true"></div>
+    <div class="ln-orb ln-orb-orange"  aria-hidden="true"></div>
+    <div class="ln-orb ln-orb-pink"    aria-hidden="true"></div>
+
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       MAIN — Navbar + Card
+       ══════════════════════════════════════ -->
+  <main class="ln-main" id="main-content">
+
+    
+    <nav class="ln-nav" aria-label="Page navigation">
+      <a href="../home-1/home.html" class="ln-brand" aria-label="TechEchos Innovation home">
+        <img src="../images/logo.svg" alt="" class="ln-brand-logo" aria-hidden="true">
+        <span class="ln-brand-name">
+          TechEchos <span class="ln-brand-accent">Innovation</span>
+        </span>
+      </a>
+      <a href="../home-1/home.html" class="ln-back-link" aria-label="Back to site">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>
+        </svg>
+        Back to site
+      </a>
+    </nav>
+
+    
+    <div class="ln-stage" id="ln-stage">
+      <div class="ln-card" id="ln-card" role="main" aria-live="polite">
+
+        
+        <div class="ln-bulb-wrap" aria-hidden="true">
+          <div class="ln-bulb-ring ln-bulb-ring-1"></div>
+          <div class="ln-bulb-ring ln-bulb-ring-2"></div>
+          <div class="ln-bulb-glow-halo"></div>
+          <img src="../images/logo.svg" alt="" class="ln-bulb-img" id="ln-bulb-img">
+        </div>
+
+        
+        <div class="ln-card-header" id="ln-card-header">
+          <h1 class="ln-card-title" id="ln-card-title">Welcome back</h1>
+          <p  class="ln-card-sub"   id="ln-card-sub">Sign in to your TechEchos account</p>
+        </div>
+
+        <!-- ════════════
+             LOGIN FORM
+             ════════════ -->
+        <form class="ln-form" id="ln-login-form"
+              novalidate autocomplete="on" aria-label="Login form">
+
+          
+          <div class="ln-field">
+            <label class="ln-label" for="l-email">Email address</label>
+            <div class="ln-input-row">
+              <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <input class="ln-input" type="email" id="l-email" name="email"
+                     placeholder="you@company.com"
+                     autocomplete="email" required
+                     aria-required="true" aria-describedby="l-email-err">
+            </div>
+            <span class="ln-err" id="l-email-err" role="alert" aria-live="polite"></span>
+          </div>
+
+          
+          <div class="ln-field">
+            <div class="ln-label-row">
+              <label class="ln-label" for="l-pass">Password</label>
+              <button type="button" class="ln-forgot-btn" aria-label="Forgot your password">Forgot password?</button>
+            </div>
+            <div class="ln-input-row">
+              <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <input class="ln-input ln-pass-input" type="password" id="l-pass" name="password"
+                     placeholder="••••••••"
+                     autocomplete="current-password" required
+                     aria-required="true" aria-describedby="l-pass-err">
+              <button type="button" class="ln-eye-btn" data-target="l-pass" aria-label="Show password">
+                <svg class="ln-eye-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg class="ln-eye-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+              </button>
+            </div>
+            <span class="ln-err" id="l-pass-err" role="alert" aria-live="polite"></span>
+          </div>
+
+          
+          <label class="ln-check-label">
+            <input type="checkbox" class="ln-checkbox" name="remember">
+            <span class="ln-check-mark" aria-hidden="true"></span>
+            Keep me signed in
+          </label>
+
+          
+          <button type="submit" class="ln-submit-btn" id="ln-login-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+            Sign In
+          </button>
+
+          
+          <div class="ln-or" aria-hidden="true">
+            <span></span><em>or continue with</em><span></span>
+          </div>
+
+          
+          <div class="ln-socials">
+            <button type="button" class="ln-social-btn" data-provider="Google" aria-label="Continue with Google">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              Google
+            </button>
+            <button type="button" class="ln-social-btn" data-provider="GitHub" aria-label="Continue with GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </button>
+          </div>
+
+          
+<p class="ln-switch-text">
+  Don't have an account?
+<a href="register.html" class="ln-switch-btn">
+  Create one free
+</a>
+</p>
+
+        </form>
+
+
+        <!-- ════════════════
+             REGISTER FORM
+             ════════════════ -->
+        <form class="ln-form ln-form-hidden" id="ln-register-form"
+              novalidate autocomplete="on" aria-label="Registration form">
+
+          
+          <div class="ln-two-col">
+            <div class="ln-field">
+              <label class="ln-label" for="r-fname">First name</label>
+              <div class="ln-input-row">
+                <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input class="ln-input" type="text" id="r-fname" name="firstname"
+                       placeholder="Ravi" autocomplete="given-name"
+                       required minlength="2" aria-required="true">
+              </div>
+              <span class="ln-err" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="ln-field">
+              <label class="ln-label" for="r-lname">Last name</label>
+              <div class="ln-input-row">
+                <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input class="ln-input" type="text" id="r-lname" name="lastname"
+                       placeholder="Sharma" autocomplete="family-name"
+                       required minlength="2" aria-required="true">
+              </div>
+              <span class="ln-err" role="alert" aria-live="polite"></span>
+            </div>
+          </div>
+
+          
+          <div class="ln-field">
+            <label class="ln-label" for="r-email">Work email</label>
+            <div class="ln-input-row">
+              <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <input class="ln-input" type="email" id="r-email" name="email"
+                     placeholder="you@company.com"
+                     autocomplete="email" required aria-required="true">
+            </div>
+            <span class="ln-err" role="alert" aria-live="polite"></span>
+          </div>
+
+          
+          <div class="ln-field">
+            <label class="ln-label" for="r-company">Company / startup</label>
+            <div class="ln-input-row">
+              <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <input class="ln-input" type="text" id="r-company" name="company"
+                     placeholder="Your company" autocomplete="organization">
+            </div>
+          </div>
+
+          
+          <div class="ln-field">
+            <label class="ln-label" for="r-pass">Password</label>
+            <div class="ln-input-row">
+              <svg class="ln-field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <input class="ln-input ln-pass-input" type="password" id="r-pass" name="password"
+                     placeholder="Min. 8 characters"
+                     autocomplete="new-password" required minlength="8" aria-required="true">
+              <button type="button" class="ln-eye-btn" data-target="r-pass" aria-label="Show password">
+                <svg class="ln-eye-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                <svg class="ln-eye-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+              </button>
+            </div>
+            
+            <div class="ln-strength" id="ln-strength">
+              <div class="ln-strength-track">
+                <div class="ln-strength-fill" id="ln-strength-fill"></div>
+              </div>
+              <span class="ln-strength-label" id="ln-strength-label"></span>
+            </div>
+            <span class="ln-err" role="alert" aria-live="polite"></span>
+          </div>
+
+          
+          <label class="ln-check-label">
+            <input type="checkbox" class="ln-checkbox" id="r-agree" name="agree" required>
+            <span class="ln-check-mark" aria-hidden="true"></span>
+            I agree to the
+            <a href="#" class="ln-text-link">Terms</a>
+            &amp;
+            <a href="#" class="ln-text-link">Privacy Policy</a>
+          </label>
+          <span class="ln-err" id="r-agree-err" role="alert" aria-live="polite"></span>
+
+          
+          <button type="submit" class="ln-submit-btn" id="ln-register-btn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Create Account
+          </button>
+
+          
+          <div class="ln-or" aria-hidden="true">
+            <span></span><em>or sign up with</em><span></span>
+          </div>
+
+          
+          <div class="ln-socials">
+            <button type="button" class="ln-social-btn" data-provider="Google" aria-label="Sign up with Google">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              Google
+            </button>
+            <button type="button" class="ln-social-btn" data-provider="GitHub" aria-label="Sign up with GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </button>
+          </div>
+
+          
+          <p class="ln-switch-text">
+            Already have an account?
+            <button type="button" class="ln-switch-btn" id="ln-to-login">Sign in</button>
+          </p>
+
+        </form>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../global-js/global.js"></script>
+  <script src="login.js"></script>
+<script src="../global-js/particles.js"></script>
+</body>
+</html>

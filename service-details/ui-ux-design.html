@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI / UX Design — TechEchos Innovation</title>
+  <meta name="description" content="TechEchos delivers research-led design systems, prototypes and user experiences that convert. 240+ components in our Orbit Design System. 100% WCAG AA compliant.">
+  <meta name="keywords" content="UI UX design, design systems, Figma, prototyping, user research, WCAG, TechEchos">
+  <meta name="author" content="TechEchos Innovation">
+  <meta property="og:title"       content="UI / UX Design — TechEchos Innovation">
+  <meta property="og:description" content="TechEchos delivers research-led design systems, prototypes and user experiences that convert. 240+ components in our Orbit Design System. 100% WCAG AA compliant.">
+  <meta property="og:type"        content="website">
+  <meta property="og:image"       content="../global-images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="../global-images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global-css/global.css">
+  <link rel="stylesheet" href="service-detail.css">
+  <style>
+    
+    :root {
+      --sd-dot-color:      #EC4899;
+      --sd-accent-grad:    linear-gradient(90deg, #EC4899 0%, #F97316 100%);
+      --sd-orb-1:          radial-gradient(circle, rgba(236,72,153,0.26), transparent 70%);
+      --sd-orb-2:          radial-gradient(circle, rgba(249,115,22,0.20), transparent 70%);
+      --sd-icon-bg:        rgba(236,72,153,0.18);
+      --sd-icon-hover:     rgba(236,72,153,0.32);
+      --sd-pill-hover-bg:  rgba(236,72,153,0.18);
+      --sd-pill-hover-border: rgba(236,72,153,0.40);
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="global-canvas"></canvas>
+
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO
+         ══════════════════════════════════════ -->
+    <section class="sd-hero" id="hero" aria-label="UI / UX Design service page hero">
+      <canvas id="sd-canvas" aria-hidden="true"></canvas>
+      <div class="sd-orb sd-orb-1" aria-hidden="true"></div>
+      <div class="sd-orb sd-orb-2" aria-hidden="true"></div>
+
+      <div class="container sd-hero-inner">
+        <div>
+          
+          <nav class="sd-crumb" aria-label="Breadcrumb">
+            <a href="../home-1/home.html">Home</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <a href="../services/services.html">Services</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <span>UI / UX Design</span>
+          </nav>
+
+          
+          <div class="sd-eyebrow reveal" aria-label="Service category">
+            <span class="sd-eyebrow-dot" aria-hidden="true"></span>
+            Service · UI / UX Design
+          </div>
+
+          
+          <h1 class="sd-headline reveal delay-1">
+            Design That Converts,<br>
+            <span class="sd-accent">Experiences That Last.</span>
+          </h1>
+
+          
+          <p class="sd-hero-sub reveal delay-2">Research-led design systems, prototypes and product experiences built for the way real users think and behave. We obsess over the details others skip — because great design is measurable, not subjective.</p>
+
+          
+          <div class="sd-hero-meta reveal delay-3">
+            <span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>240+</strong> — Design System Components</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>100%</strong> — WCAG AA</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>Figma</strong> — Primary Tool</span>
+          </div>
+
+          
+          <div class="sd-hero-ctas reveal delay-4">
+            <a href="../contact/contact.html#quote" class="sd-btn-primary"
+               aria-label="Start a UI / UX Design project">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Start This Service
+            </a>
+            <a href="../services/services.html" class="sd-btn-ghost"
+               aria-label="View all services">
+              All Services
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="sd-hero-stats reveal-right" aria-label="Service metrics">
+          <div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >240+</span>
+  <span class="sd-hero-stat-lbl">Design System Components</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >100%</span>
+  <span class="sd-hero-stat-lbl">WCAG AA Compliant</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >12</span>
+  <span class="sd-hero-stat-lbl">Design Systems Built</span>
+</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         MAIN LAYOUT — content + sidebar
+         ══════════════════════════════════════ -->
+    <div class="sd-layout">
+      <div class="container sd-layout-inner">
+
+        
+        <div class="sd-main">
+
+          
+          <section class="sd-overview" aria-labelledby="sd-overview-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Service Overview
+            </div>
+            <div class="sd-overview-text reveal">
+              <p>Design that looks beautiful but doesn't convert is a decoration problem. Design that converts but is inaccessible or impossible to maintain is a technical debt problem. We build design systems and product experiences that solve both problems simultaneously — because the best design is both aesthetically precise and functionally excellent.</p>
+<p>Our design practice is research-led. We start with user interviews, competitor analysis and heuristic evaluation before opening Figma. We believe designers who don't talk to users are decorators, not designers. Every design decision we make should be traceable to a user need or a business outcome.</p>
+<p>Our <strong>Orbit Design System</strong> — used across 12 client products — contains 240+ components built with design tokens, accessible by default, documented in Storybook and exported as React components. It's the design system we wish existed when we started. We can adapt it for your brand or build a new system from scratch.</p>
+            </div>
+          </section>
+
+          
+          <section class="sd-features" aria-labelledby="sd-features-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Core Capabilities
+            </div>
+            <div class="sd-features-grid">
+              <div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+  <h3 class="sd-fc-title">User Research & Testing</h3>
+  <p class="sd-fc-desc">Jobs-to-be-done interviews, usability testing, heat maps and session recording analysis — decisions grounded in what users actually do, not what they say they do.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+  <h3 class="sd-fc-title">Design Systems</h3>
+  <p class="sd-fc-desc">240+ component design system with Figma variables, design tokens, interactive states and Storybook documentation. Built to scale across multiple products.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13.5V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v6.5"/><path d="M12 17v4"/><path d="M8 21h8"/><rect x="4" y="15" width="16" height="2" rx="1"/></svg></div>
+  <h3 class="sd-fc-title">Prototyping & Motion</h3>
+  <p class="sd-fc-desc">High-fidelity Figma prototypes with realistic interactions and motion design. Every transition specified before development begins.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+  <h3 class="sd-fc-title">Accessibility (WCAG AA)</h3>
+  <p class="sd-fc-desc">Colour contrast, keyboard navigation, screen reader compatibility and focus management tested and certified to WCAG 2.1 AA on every component.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+  <h3 class="sd-fc-title">Performance-Aware Design</h3>
+  <p class="sd-fc-desc">Typography choices, image strategies, animation budgets and loading states designed with Core Web Vitals in mind from the first frame.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+  <h3 class="sd-fc-title">Design-to-Code Handoff</h3>
+  <p class="sd-fc-desc">Figma variables exported as CSS design tokens. Component specifications written for developers, not against them. Eliminate guesswork in implementation.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-process" aria-labelledby="sd-process-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              How We Deliver
+            </div>
+            <div class="sd-process-list" role="list">
+              <div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">01</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Discovery & Research</h4>
+    <p class="sd-pi-desc">Stakeholder interviews, competitor analysis, heuristic evaluation and user research. We understand the problem before we design any solution.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">02</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Information Architecture</h4>
+    <p class="sd-pi-desc">User flows, content hierarchy and navigation structure mapped and validated before any visual design begins.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">03</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Wireframes & Prototype</h4>
+    <p class="sd-pi-desc">Low-fi wireframes reviewed with stakeholders, then a high-fidelity interactive Figma prototype that your team can click through on real devices.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">04</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Design System Build</h4>
+    <p class="sd-pi-desc">Component library, design tokens, interaction states and motion design. Everything in Figma with variables — and Storybook documentation for developers.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">05</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Handoff & QA</h4>
+    <p class="sd-pi-desc">Annotated Figma files, CSS token exports and a design QA pass after development to ensure pixel-perfect implementation.</p>
+  </div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-metrics" aria-label="Service results and metrics">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Results We Deliver
+            </div>
+            <div class="sd-metrics-grid">
+              <div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >240+</span>
+  <span class="sd-mc-lbl">Components in the Orbit Design System</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >100%</span>
+  <span class="sd-mc-lbl">WCAG AA compliant components</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >12</span>
+  <span class="sd-mc-lbl">Design systems built and deployed</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >43%</span>
+  <span class="sd-mc-lbl">Average conversion rate improvement</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >2.4×</span>
+  <span class="sd-mc-lbl">Avg increase in task completion rate</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >60%</span>
+  <span class="sd-mc-lbl">Reduction in design-development rework</span>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-stack" aria-label="Technology stack">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Technology Stack
+            </div>
+            <div class="sd-stack-grid">
+              <div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Design Tools</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🎨</span>Figma</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🖼️</span>Framer</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📐</span>Lottie / Rive</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Design System</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🧱</span>Design Tokens</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📚</span>Storybook</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🎭</span>Framer Motion</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">♿</span>axe-core Accessibility</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Research & Testing</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔬</span>Maze</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">👁️</span>Hotjar</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🎙️</span>User Interviews</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📊</span>Mixpanel Flows</span></div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-usp" aria-labelledby="sd-usp-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Why TechEchos
+            </div>
+            <div class="sd-usp-list">
+              <div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We research before we design</strong> — No assumption-based design. Every major decision is validated with real users before it goes into the Figma file.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Accessibility is standard, not an add-on</strong> — WCAG AA compliance is part of our default process. We never charge extra for accessible design.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Design tokens bridge Figma and code</strong> — Our Figma variables export directly as CSS custom properties. One source of truth, no drift between design and implementation.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We QA the implementation</strong> — A designer reviews every built UI against the Figma spec. Pixel-level accuracy matters to us, not just "good enough."</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We train your team</strong> — Every design system engagement includes a handover session where we train your team to use and extend the system independently.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <div class="sd-callout sd-callout-info">
+  <span class="sd-callout-icon" aria-hidden="true">💡</span>
+  <p><strong>Design Tokens Are Non-Negotiable</strong>Design tokens transform your system from a static library into a themeable, maintainable platform. Every visual decision — colour, typography, spacing, shadow — expressed as a named token means dark mode, white-labelling and global brand updates happen in one place.</p>
+</div>
+
+          
+          <section class="sd-faq" aria-labelledby="sd-faq-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Frequently Asked Questions
+            </div>
+            <div class="sd-acc-list" role="list">
+              <div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Do you work with existing brand guidelines?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Yes — we extend and systematise existing brand guidelines into a working design system. We also identify and resolve inconsistencies and gaps in existing brands.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Can you redesign an existing product?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Absolutely. We conduct a UX audit of the existing product, identify friction points and redesign flows for conversion and usability — without losing what already works well.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Do your designs get built by TechEchos engineers?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Most of the time, yes — and this is a significant advantage. When designers and engineers work together from day one, implementation is faster, more accurate and less expensive than designing in isolation.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    How do you handle mobile design?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">We design for all screen sizes simultaneously using responsive Figma components. We follow platform conventions for iOS (Human Interface Guidelines) and Android (Material Design) while maintaining your brand identity.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    What deliverables do we get?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Full Figma file with components and variables, interactive prototype, design token exports, Storybook documentation, accessibility audit report and a recorded walkthrough of the design system.</div>
+  </div>
+</div>
+            </div>
+          </section>
+
+        </div>
+
+        
+        <aside class="sd-sidebar" aria-label="Service sidebar">
+
+          
+          <div class="sd-sc" aria-label="All services navigation">
+            <p class="sd-sc-head">All Services</p>
+            <div class="sd-sc-links">
+              <a href="web-development.html"       class="sd-sc-link "       aria-label="Web Development">
+                ⚛️ Web Development
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="mobile-app.html"            class="sd-sc-link "    aria-label="Mobile App Development">
+                📱 Mobile App Dev
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cloud-solutions.html"       class="sd-sc-link "     aria-label="Cloud Solutions">
+                ☁️ Cloud Solutions
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="artificial-intelligence.html" class="sd-sc-link "     aria-label="Artificial Intelligence">
+                🧠 Artificial Intelligence
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="ui-ux-design.html"          class="sd-sc-link is-current"   aria-label="UI / UX Design">
+                🎨 UI / UX Design
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cybersecurity.html"         class="sd-sc-link "  aria-label="Cybersecurity">
+                🔐 Cybersecurity
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc sd-sc-cta" aria-label="Start your project">
+            <div class="sd-sc-cta">
+              <img src="../images/logo.svg" alt="" style="width:42px;height:42px;object-fit:contain;margin:0 auto;filter:drop-shadow(0 0 10px rgba(249,115,22,.7));animation:sdBulbFloat 3s ease-in-out infinite;" aria-hidden="true">
+              <h4>Start This Service</h4>
+              <p>Free consultation · No obligation · Reply in 24 hours</p>
+              <a href="../contact/contact.html#quote" class="sd-sc-cta-btn"
+                 aria-label="Get a quote for UI / UX Design">Get a Free Quote</a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Newsletter signup">
+            <p class="sd-sc-head">Weekly Insights</p>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.40);margin-bottom:12px;line-height:1.60;">
+              Get the latest in UI & UX Design delivered every week.
+            </p>
+            <form class="sd-nl-form" novalidate aria-label="Newsletter signup">
+              <div class="sd-sc-nl">
+                <input type="email" placeholder="your@email.com" autocomplete="email" required aria-label="Email address">
+                <button type="submit" class="sd-sc-nl-btn">Subscribe Free</button>
+              </div>
+            </form>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Related services">
+            <p class="sd-sc-head">Related Services</p>
+            <div class="sd-sc-related">
+              <a href="web-development.html" class="sd-sc-rel-item" aria-label="Web Development service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">⚛️</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Web Development</span>
+    <span class="sd-sc-rel-cat">React · Next.js</span>
+  </div>
+</a>
+<a href="mobile-app.html" class="sd-sc-rel-item" aria-label="Mobile App Development service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">📱</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Mobile App Development</span>
+    <span class="sd-sc-rel-cat">Flutter · Swift</span>
+  </div>
+</a>
+<a href="artificial-intelligence.html" class="sd-sc-rel-item" aria-label="Artificial Intelligence service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">🧠</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Artificial Intelligence</span>
+    <span class="sd-sc-rel-cat">AI-powered UX</span>
+  </div>
+</a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         BOTTOM CTA
+         ══════════════════════════════════════ -->
+    <section class="sd-cta-section" aria-labelledby="sd-cta-title">
+      <canvas id="sd-cta-canvas" aria-hidden="true"></canvas>
+  <div class="floating-bulbs" 
+       data-bulb-count="14"
+       data-bulb-img="../global-images/logo.svg">
+  </div>
+      <div class="container sd-cta-inner">
+        <div class="sd-cta-bulb-badge reveal" aria-hidden="true">
+          <div class="sd-cta-bulb-glow" aria-hidden="true"></div>
+          <img src="../images/logo.svg" alt="" class="sd-cta-bulb-img">
+        </div>
+        <h2 class="sd-cta-headline reveal delay-1" id="sd-cta-title">
+          Ready to Build<br>
+          <span class="sd-cta-accent">An Interface Users Actually Love?</span>
+        </h2>
+        <p class="sd-cta-sub reveal delay-2">Research-led, accessible, beautifully crafted. Let's design your next product together.</p>
+        <div class="sd-cta-acts reveal delay-3">
+          <a href="../contact/contact.html#quote" class="sd-btn-primary"
+             aria-label="Start your UI / UX Design project">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Your Project
+          </a>
+          <a href="../services/services.html" class="sd-btn-ghost"
+             aria-label="Explore all services">
+            Explore All Services
+          </a>
+        </div>
+        <p class="sd-cta-fine reveal delay-4">No long-term contracts · Cancel anytime · First sprint on us</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../global-js/global.js"></script>
+  <script src="service-detail.js"></script>
+<script src="../global-js/particles.js"></script>
+</body>
+</html>

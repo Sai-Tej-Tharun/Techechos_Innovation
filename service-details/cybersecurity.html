@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity — TechEchos Innovation</title>
+  <meta name="description" content="TechEchos delivers penetration testing, security audits, ISO 27001 and SOC 2 compliance. Zero client breaches. We protect your product from line one.">
+  <meta name="keywords" content="cybersecurity, penetration testing, security audit, ISO 27001, SOC 2, GDPR, OWASP, TechEchos">
+  <meta name="author" content="TechEchos Innovation">
+  <meta property="og:title"       content="Cybersecurity — TechEchos Innovation">
+  <meta property="og:description" content="TechEchos delivers penetration testing, security audits, ISO 27001 and SOC 2 compliance. Zero client breaches. We protect your product from line one.">
+  <meta property="og:type"        content="website">
+  <meta property="og:image"       content="../global-images/logo.svg">
+  <link rel="icon" type="image/svg+xml" href="../global-images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global-css/global.css">
+  <link rel="stylesheet" href="service-detail.css">
+  <style>
+    
+    :root {
+      --sd-dot-color:      #22C55E;
+      --sd-accent-grad:    linear-gradient(90deg, #166534 0%, #22C55E 60%, #00CFFF 100%);
+      --sd-orb-1:          radial-gradient(circle, rgba(34,197,94,0.24), transparent 70%);
+      --sd-orb-2:          radial-gradient(circle, rgba(0,207,255,0.18), transparent 70%);
+      --sd-icon-bg:        rgba(34,197,94,0.16);
+      --sd-icon-hover:     rgba(34,197,94,0.30);
+      --sd-pill-hover-bg:  rgba(34,197,94,0.14);
+      --sd-pill-hover-border: rgba(34,197,94,0.38);
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="global-canvas"></canvas>
+
+  <div id="navbar-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════════════
+         HERO
+         ══════════════════════════════════════ -->
+    <section class="sd-hero" id="hero" aria-label="Cybersecurity service page hero">
+      <canvas id="sd-canvas" aria-hidden="true"></canvas>
+      <div class="sd-orb sd-orb-1" aria-hidden="true"></div>
+      <div class="sd-orb sd-orb-2" aria-hidden="true"></div>
+
+      <div class="container sd-hero-inner">
+        <div>
+          
+          <nav class="sd-crumb" aria-label="Breadcrumb">
+            <a href="../home-1/home.html">Home</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <a href="../services/services.html">Services</a>
+            <span class="sd-crumb-sep" aria-hidden="true">/</span>
+            <span>Cybersecurity</span>
+          </nav>
+
+          
+          <div class="sd-eyebrow reveal" aria-label="Service category">
+            <span class="sd-eyebrow-dot" aria-hidden="true"></span>
+            Service · Cybersecurity
+          </div>
+
+          
+          <h1 class="sd-headline reveal delay-1">
+            Security Built In,<br>
+            <span class="sd-accent">Not Bolted On.</span>
+          </h1>
+
+          
+          <p class="sd-hero-sub reveal delay-2">Penetration testing, security audits, ISO 27001, GDPR and SOC 2 compliance. We protect what you build from the first line of code — because breaches don't care how much you have on your product roadmap.</p>
+
+          
+          <div class="sd-hero-meta reveal delay-3">
+            <span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>0</strong> — Client Breaches</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>ISO 27001</strong> — Certified</span>
+<span class="sd-meta-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <strong>40-Point</strong> — Security Audit</span>
+          </div>
+
+          
+          <div class="sd-hero-ctas reveal delay-4">
+            <a href="../contact/contact.html#quote" class="sd-btn-primary"
+               aria-label="Start a Cybersecurity project">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              Start This Service
+            </a>
+            <a href="../services/services.html" class="sd-btn-ghost"
+               aria-label="View all services">
+              All Services
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="sd-hero-stats reveal-right" aria-label="Service metrics">
+          <div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >0</span>
+  <span class="sd-hero-stat-lbl">Client Breaches on Our Watch</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >ISO 27001</span>
+  <span class="sd-hero-stat-lbl">Certified Processes</span>
+</div>
+<div class="sd-hero-stat reveal">
+  <span class="sd-hero-stat-val" >40pt</span>
+  <span class="sd-hero-stat-lbl">Security Audit Checklist</span>
+</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         MAIN LAYOUT — content + sidebar
+         ══════════════════════════════════════ -->
+    <div class="sd-layout">
+      <div class="container sd-layout-inner">
+
+        
+        <div class="sd-main">
+
+          
+          <section class="sd-overview" aria-labelledby="sd-overview-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Service Overview
+            </div>
+            <div class="sd-overview-text reveal">
+              <p>The question is no longer whether your product will be attacked — it's when, and whether you'll be ready. Enterprise clients have security teams that will grill your team with detailed questionnaires. Consumer products handle personal data governed by GDPR. Healthcare applications must meet HIPAA. Fintech products need SOC 2. And every public-facing API is under constant automated attack.</p>
+<p>Our security practice is built on the philosophy that <strong>security is a property of your architecture, not a product you purchase</strong>. We integrate security thinking into every phase of development — from threat modelling during architecture design to dependency scanning in CI/CD to penetration testing before major releases.</p>
+<p>We have helped startups pass enterprise security reviews that would have otherwise killed six-figure deals. We have helped scale-ups achieve SOC 2 Type II in 12 months. We have identified critical vulnerabilities in production systems before attackers did. Security is not our afterthought — it is our standard.</p>
+            </div>
+          </section>
+
+          
+          <section class="sd-features" aria-labelledby="sd-features-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Core Capabilities
+            </div>
+            <div class="sd-features-grid">
+              <div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+  <h3 class="sd-fc-title">Penetration Testing</h3>
+  <p class="sd-fc-desc">Web app, API, mobile and infrastructure penetration testing following OWASP methodology. Detailed report with CVSS scores, exploitation proof and step-by-step remediation.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+  <h3 class="sd-fc-title">Security Architecture Review</h3>
+  <p class="sd-fc-desc">Threat modelling, architecture review and security design consultation — the earlier in your build cycle, the cheaper the fixes.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+  <h3 class="sd-fc-title">Compliance Programmes</h3>
+  <p class="sd-fc-desc">SOC 2 Type I & II, ISO 27001, GDPR and HIPAA compliance programmes. Policy documentation, evidence collection, control implementation and audit preparation.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+  <h3 class="sd-fc-title">SAST / DAST in CI/CD</h3>
+  <p class="sd-fc-desc">Static application security testing, dynamic testing and dependency vulnerability scanning integrated into your CI/CD pipeline — security gates on every pull request.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+  <h3 class="sd-fc-title">Security Monitoring</h3>
+  <p class="sd-fc-desc">SIEM integration, anomaly detection, threat intelligence feeds and incident response playbooks — 24/7 visibility into your security posture.</p>
+</div>
+<div class="sd-feature-card reveal">
+  <div class="sd-fc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+  <h3 class="sd-fc-title">Security Training</h3>
+  <p class="sd-fc-desc">Developer security awareness training, secure coding workshops and social engineering simulations — reducing human-layer risk across your team.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-process" aria-labelledby="sd-process-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              How We Deliver
+            </div>
+            <div class="sd-process-list" role="list">
+              <div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">01</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Threat Modelling</h4>
+    <p class="sd-pi-desc">STRIDE analysis of your architecture to identify attack surfaces, trust boundaries and high-risk components before testing begins.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">02</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Reconnaissance & Scanning</h4>
+    <p class="sd-pi-desc">OSINT, subdomain enumeration, port scanning and automated vulnerability identification across all in-scope assets.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">03</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Manual Penetration Testing</h4>
+    <p class="sd-pi-desc">Manual exploitation of identified vulnerabilities by our security engineers — OWASP Top 10, BOLA, injection, auth bypass and business logic flaws.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">04</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Findings Report</h4>
+    <p class="sd-pi-desc">CVSS-scored vulnerability report with exploitation evidence, risk rating, business impact and step-by-step remediation guidance prioritised by severity.</p>
+  </div>
+</div>
+<div class="sd-process-item" role="listitem">
+  <div class="sd-pi-badge" aria-hidden="true">05</div>
+  <div class="sd-pi-content">
+    <h4 class="sd-pi-title">Remediation & Re-test</h4>
+    <p class="sd-pi-desc">We work with your engineering team to remediate findings and then re-test every vulnerability to confirm it is closed before issuing a clean certificate.</p>
+  </div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-metrics" aria-label="Service results and metrics">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Results We Deliver
+            </div>
+            <div class="sd-metrics-grid">
+              <div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >0</span>
+  <span class="sd-mc-lbl">Client breaches on our watch</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >100%</span>
+  <span class="sd-mc-lbl">Remediation re-test pass rate</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >40pt</span>
+  <span class="sd-mc-lbl">Standard security audit checklist</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >ISO 27001</span>
+  <span class="sd-mc-lbl">Certified internal processes</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" ><24h</span>
+  <span class="sd-mc-lbl">Critical vulnerability response SLA</span>
+</div>
+<div class="sd-metric-card reveal">
+  <span class="sd-mc-val" >300+</span>
+  <span class="sd-mc-lbl">Security reviews completed</span>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-stack" aria-label="Technology stack">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Technology Stack
+            </div>
+            <div class="sd-stack-grid">
+              <div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Testing Tools</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔍</span>Burp Suite Pro</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">⚡</span>OWASP ZAP</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🛡️</span>Metasploit</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔬</span>Nmap / Nessus</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Compliance</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📋</span>ISO 27001</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🏆</span>SOC 2</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔒</span>GDPR</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🏥</span>HIPAA</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🌐</span>PCI DSS</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">SAST / DAST</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📦</span>Snyk</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔧</span>Semgrep</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🐳</span>Trivy</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔄</span>GitHub Security</span></div>
+</div>
+<div class="sd-stack-row reveal">
+  <div class="sd-stack-row-label">Monitoring & SIEM</div>
+  <div class="sd-stack-pills"><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📊</span>Splunk</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🔍</span>AWS Security Hub</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">🛡️</span>GuardDuty</span><span class="sd-pill"><span class="sd-pill-emoji" aria-hidden="true">📈</span>Datadog Security</span></div>
+</div>
+            </div>
+          </section>
+
+          
+          <section class="sd-usp" aria-labelledby="sd-usp-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Why TechEchos
+            </div>
+            <div class="sd-usp-list">
+              <div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Zero client breaches on our watch</strong> — We have maintained a zero-breach record across every engagement. We intend to keep it that way.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We think like attackers</strong> — Our penetration testers hold OSCP and CEH certifications and approach every assessment with genuine adversarial thinking — not just running automated scanners.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>We fix what we find</strong> — Unlike pure security consultancies, we work with your engineering team to remediate findings and re-test. We don't just leave you with a PDF.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>SOC 2 doesn't have to take 18 months</strong> — With the right controls in place from the start, we have helped clients achieve SOC 2 Type II in 12 months. We know exactly what auditors look for.</p>
+</div>
+<div class="sd-usp-item reveal">
+  <span class="sd-usp-check" aria-label="Included">✓</span>
+  <p class="sd-usp-text"><strong>Security training is included</strong> — Every engagement includes a security awareness session with your engineering team — because most breaches start with human error.</p>
+</div>
+            </div>
+          </section>
+
+          
+          <div class="sd-callout sd-callout-warn">
+  <span class="sd-callout-icon" aria-hidden="true">⚠️</span>
+  <p><strong>The Enterprise Security Review</strong>Enterprise clients don't just ask "have you been breached?" — they ask "what would you do if you were?" Your incident response plan must be documented, tested and accessible at 3am. We have seen startups lose six-figure ARR deals because they couldn't answer basic questions about data residency and encryption at rest. Prepare before you sell upmarket.</p>
+</div>
+
+          
+          <section class="sd-faq" aria-labelledby="sd-faq-title">
+            <div class="sd-block-label">
+              <span class="sd-block-label-dot" aria-hidden="true"></span>
+              Frequently Asked Questions
+            </div>
+            <div class="sd-acc-list" role="list">
+              <div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    How often should we conduct penetration testing?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">At minimum, annually and before any major release or enterprise sales process. For regulated industries (fintech, healthcare) or products handling significant personal data, we recommend quarterly assessments.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    What is included in a penetration test report?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Executive summary for stakeholders, technical findings with CVSS v3 scores, exploitation evidence (screenshots/videos), business impact assessment, step-by-step remediation instructions and a risk prioritisation matrix.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    How long does SOC 2 compliance take?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">SOC 2 Type I (point-in-time): 3–5 months if controls are already partially in place. Type II (6-month observation period): 9–12 months minimum. Starting earlier is always better — the observation period begins when you begin.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Do you do source code reviews?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Yes — we conduct manual white-box code reviews in addition to automated SAST scanning. We focus on authentication logic, input validation, cryptographic implementations and secrets management.</div>
+  </div>
+</div>
+<div class="sd-acc-item" role="listitem">
+  <button class="sd-acc-trigger" aria-expanded="false">
+    Can you help us pass an enterprise security questionnaire?
+    <svg class="sd-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div class="sd-acc-body">
+    <div class="sd-acc-body-inner">Yes. We gap-assess your current posture against common enterprise questionnaire requirements (Shared Assessments SIG, CAIQ, VSAQ), implement missing controls and help you produce accurate, professional responses.</div>
+  </div>
+</div>
+            </div>
+          </section>
+
+        </div>
+
+        
+        <aside class="sd-sidebar" aria-label="Service sidebar">
+
+          
+          <div class="sd-sc" aria-label="All services navigation">
+            <p class="sd-sc-head">All Services</p>
+            <div class="sd-sc-links">
+              <a href="web-development.html"       class="sd-sc-link "       aria-label="Web Development">
+                ⚛️ Web Development
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="mobile-app.html"            class="sd-sc-link "    aria-label="Mobile App Development">
+                📱 Mobile App Dev
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cloud-solutions.html"       class="sd-sc-link "     aria-label="Cloud Solutions">
+                ☁️ Cloud Solutions
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="artificial-intelligence.html" class="sd-sc-link "     aria-label="Artificial Intelligence">
+                🧠 Artificial Intelligence
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="ui-ux-design.html"          class="sd-sc-link "   aria-label="UI / UX Design">
+                🎨 UI / UX Design
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+              <a href="cybersecurity.html"         class="sd-sc-link is-current"  aria-label="Cybersecurity">
+                🔐 Cybersecurity
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc sd-sc-cta" aria-label="Start your project">
+            <div class="sd-sc-cta">
+              <img src="../images/logo.svg" alt="" style="width:42px;height:42px;object-fit:contain;margin:0 auto;filter:drop-shadow(0 0 10px rgba(249,115,22,.7));animation:sdBulbFloat 3s ease-in-out infinite;" aria-hidden="true">
+              <h4>Start This Service</h4>
+              <p>Free consultation · No obligation · Reply in 24 hours</p>
+              <a href="../contact/contact.html#quote" class="sd-sc-cta-btn"
+                 aria-label="Get a quote for Cybersecurity">Get a Free Quote</a>
+            </div>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Newsletter signup">
+            <p class="sd-sc-head">Weekly Insights</p>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.40);margin-bottom:12px;line-height:1.60;">
+              Get the latest in Cybersecurity delivered every week.
+            </p>
+            <form class="sd-nl-form" novalidate aria-label="Newsletter signup">
+              <div class="sd-sc-nl">
+                <input type="email" placeholder="your@email.com" autocomplete="email" required aria-label="Email address">
+                <button type="submit" class="sd-sc-nl-btn">Subscribe Free</button>
+              </div>
+            </form>
+          </div>
+
+          
+          <div class="sd-sc" aria-label="Related services">
+            <p class="sd-sc-head">Related Services</p>
+            <div class="sd-sc-related">
+              <a href="cloud-solutions.html" class="sd-sc-rel-item" aria-label="Cloud Solutions service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">☁️</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Cloud Solutions</span>
+    <span class="sd-sc-rel-cat">AWS Security · IAM</span>
+  </div>
+</a>
+<a href="web-development.html" class="sd-sc-rel-item" aria-label="Web Development service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">⚛️</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Web Development</span>
+    <span class="sd-sc-rel-cat">Secure by Design</span>
+  </div>
+</a>
+<a href="artificial-intelligence.html" class="sd-sc-rel-item" aria-label="Artificial Intelligence service">
+  <div class="sd-sc-rel-icon" aria-hidden="true">🧠</div>
+  <div class="sd-sc-rel-text">
+    <span class="sd-sc-rel-name">Artificial Intelligence</span>
+    <span class="sd-sc-rel-cat">AI Security</span>
+  </div>
+</a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════
+         BOTTOM CTA
+         ══════════════════════════════════════ -->
+    <section class="sd-cta-section" aria-labelledby="sd-cta-title">
+      <canvas id="sd-cta-canvas" aria-hidden="true"></canvas>
+  <div class="floating-bulbs" 
+       data-bulb-count="14"
+       data-bulb-img="../global-images/logo.svg">
+  </div>
+      <div class="container sd-cta-inner">
+        <div class="sd-cta-bulb-badge reveal" aria-hidden="true">
+          <div class="sd-cta-bulb-glow" aria-hidden="true"></div>
+          <img src="../images/logo.svg" alt="" class="sd-cta-bulb-img">
+        </div>
+        <h2 class="sd-cta-headline reveal delay-1" id="sd-cta-title">
+          Ready to Build<br>
+          <span class="sd-cta-accent">Your Product Secure Before It Ships?</span>
+        </h2>
+        <p class="sd-cta-sub reveal delay-2">Zero breaches on our watch. Let's build security in from line one.</p>
+        <div class="sd-cta-acts reveal delay-3">
+          <a href="../contact/contact.html#quote" class="sd-btn-primary"
+             aria-label="Start your Cybersecurity project">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Start Your Project
+          </a>
+          <a href="../services/services.html" class="sd-btn-ghost"
+             aria-label="Explore all services">
+            Explore All Services
+          </a>
+        </div>
+        <p class="sd-cta-fine reveal delay-4">No long-term contracts · Cancel anytime · First sprint on us</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../global-js/global.js"></script>
+  <script src="service-detail.js"></script>
+<script src="../global-js/particles.js"></script>
+</body>
+</html>
