@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="title" content="Coming Soon | TechEchos Innovation">
+  <meta name="description" content="Something amazing is coming. Be the first to know when TechEchos Innovation launches. Sign up for early access.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Coming Soon | TechEchos Innovation">
+  <meta property="og:description" content="Something amazing is coming. Be the first to know when TechEchos Innovation launches.">
+  <meta property="og:image" content="../global-images/og-image.jpg">
+  
+  
+  <link rel="icon" type="image/x-icon" href="../global-images/logo.svg">
+  
+  
+  <title>Coming Soon | TechEchos Innovation</title>
+  
+  
+  <link rel="stylesheet" href="../global-css/global.css">
+  
+  
+  <link rel="stylesheet" href="coming-soon.css">
+  
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="coming-soon-body">
+
+  <!-- ============================================
+       PARTICLE BACKGROUND
+       ============================================ -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+
+  <!-- ============================================
+       COMING SOON MAIN SECTION
+       ============================================ -->
+  <main class="coming-soon-section" role="main">
+    <div class="container">
+      
+      
+      <div class="cs-logo" data-aos="fade-down">
+        <img src="../global-images/logo.svg" alt="TechEchos Innovation Logo" width="100" height="60">
+      </div>
+      
+      
+      <div class="cs-content" data-aos="fade-up">
+        
+        
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">Launching Soon</span>
+        </div>
+        
+        
+        <h1 class="cs-title">
+          Something <span class="text-gradient">Amazing</span><br>
+          Is Coming
+        </h1>
+        
+        
+        <p class="cs-description">
+          We're crafting the next generation of digital innovation. 
+          Our platform will revolutionize how businesses transform ideas into breakthrough technology solutions.
+        </p>
+        
+        
+        <div class="countdown-container" role="timer" aria-live="polite" aria-atomic="true">
+          <div class="countdown-box">
+            <div class="countdown-number" id="days" data-count="0">0</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="hours" data-count="0">0</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="minutes" data-count="0">0</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="seconds" data-count="0">0</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+        
+        
+        <div class="newsletter-section">
+          <h3 class="newsletter-title">Get Early Access</h3>
+          <p class="newsletter-subtitle">Be the first to know when we launch. Join our exclusive waitlist.</p>
+          
+          <form class="newsletter-form" id="waitlist-form" novalidate>
+            <div class="form-group">
+              <div class="input-with-icon">
+                <i data-lucide="mail" class="input-icon"></i>
+                <input 
+                  type="email" 
+                  id="waitlist-email" 
+                  name="email"
+                  class="form-input" 
+                  placeholder="Enter your email address"
+                  required
+                  aria-label="Email address"
+                  aria-required="true"
+                  autocomplete="email"
+                >
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg submit-btn">
+                <span class="btn-text">Notify Me</span>
+                <i data-lucide="arrow-right" class="btn-icon"></i>
+              </button>
+            </div>
+            <div class="form-message" id="form-message" role="alert" aria-live="polite"></div>
+          </form>
+          
+          
+          <p class="privacy-notice">
+            <i data-lucide="shield-check" class="privacy-icon"></i>
+            We respect your privacy. Unsubscribe at any time.
+          </p>
+        </div>
+        
+        
+        <div class="social-section">
+          <p class="social-label">Follow Our Journey</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Follow us on Twitter" data-tooltip="Twitter">
+              <i data-lucide="twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on LinkedIn" data-tooltip="LinkedIn">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on GitHub" data-tooltip="GitHub">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on Facebook" data-tooltip="Facebook">
+              <i data-lucide="facebook"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Follow us on Instagram" data-tooltip="Instagram">
+              <i data-lucide="instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      
+      <div class="features-preview" data-aos="fade-up">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-lucide="zap"></i>
+          </div>
+          <h4>AI-Powered Solutions</h4>
+          <p>Cutting-edge artificial intelligence at your fingertips</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-lucide="cloud"></i>
+          </div>
+          <h4>Cloud Native</h4>
+          <p>Scalable infrastructure built for the modern web</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h4>Enterprise Security</h4>
+          <p>Bank-level encryption and data protection</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <h4>Growth Analytics</h4>
+          <p>Real-time insights to accelerate your business</p>
+        </div>
+      </div>
+      
+      
+      <div class="launch-progress" data-aos="fade-up">
+        <div class="progress-header">
+          <span class="progress-label">Launch Progress</span>
+          <span class="progress-percentage" id="progress-percent">78%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill" data-width="78%" style="width: 0%;"></div>
+        </div>
+        <div class="progress-milestones">
+          <div class="milestone completed">
+            <i data-lucide="check-circle"></i>
+            <span>Design</span>
+          </div>
+          <div class="milestone completed">
+            <i data-lucide="check-circle"></i>
+            <span>Development</span>
+          </div>
+          <div class="milestone active">
+            <i data-lucide="loader"></i>
+            <span>Testing</span>
+          </div>
+          <div class="milestone">
+            <i data-lucide="circle"></i>
+            <span>Launch</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+
+  <!-- ============================================
+       FLOATING PARTICLES / TECH BADGES
+       ============================================ -->
+  <div class="floating-elements" aria-hidden="true">
+    <div class="floating-badge tech-badge-1">
+      <i data-lucide="cpu"></i>
+      <span>AI Engine</span>
+    </div>
+    <div class="floating-badge tech-badge-2">
+      <i data-lucide="database"></i>
+      <span>Big Data</span>
+    </div>
+    <div class="floating-badge tech-badge-3">
+      <i data-lucide="lock"></i>
+      <span>Encrypted</span>
+    </div>
+    <div class="floating-badge tech-badge-4">
+      <i data-lucide="globe"></i>
+      <span>Global CDN</span>
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       FOOTER MINIMAL
+       ============================================ -->
+  <footer class="cs-footer">
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2024 TechEchos Innovation. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a href="../contact/contact.html">Contact</a>
+        <span class="separator">•</span>
+        <a href="#">Privacy</a>
+        <span class="separator">•</span>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       JAVASCRIPT
+       ============================================ -->
+  
+  
+  <script src="../global-js/global.js"></script>
+  
+  
+  <script src="coming-soon.js"></script>
+  
+  
+  <script>
+    lucide.createIcons();
+  </script>
+
+<script src="../global-js/particles.js"></script>
+</body>
+</html>
